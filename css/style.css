@@ -60,5 +60,6 @@ section .container {
 
 h2 {
     font-family: 'Avenir Roman';
-    font-weight: 200;
+    font-weight: bold;
+    color: #4CAF50; 
 }
