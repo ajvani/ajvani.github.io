@@ -1,18 +1,19 @@
-@font-face{
-	font-family: 'Avenir Roman';
-	src:url('../avenir/Avenir-Roman.otf');
+@font-face {
+    font-family: 'Avenir Roman';
+    src: url('../avenir/Avenir-Roman.otf');
 }
+
 .navbar {
     list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	position: fixed;
-	width: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    width: auto;
     height: 100%;
-	top: 0;
-	left: 0;
-	background-color: #333;
+    top: 0;
+    left: 0;
+    background-color: #333;
 }
 
 li {
@@ -36,21 +37,24 @@ object {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: 950px; 
+    height: 950px;
 }
+
 li:hover:not(.active) {
-	background-color: #111;
+    background-color: #111;
 }
 
 .active {
-	background-color: #4CAF50;
+    background-color: #4CAF50;
 }
+
 .container {
     width: 80%;
     margin-left: 100px;
     padding: 20px;
     padding-top: 0px;
 }
+
 section .container {
     width: 80%;
     margin-left: 100px;
