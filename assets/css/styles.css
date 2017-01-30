@@ -1,0 +1,202 @@
+@keyframes fade-right {
+	from { 
+		opacity: 0;
+		left: -300px; 
+	}
+	to { 
+		opacity: 1; 
+		left: 0px; 
+	}
+}
+
+@keyframes fade-up {
+	from {
+		opacity: 0; 
+		top: 100px; 
+	}
+	to {
+		opacity: 1; 
+		top: 0px; 
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+body {
+	top: 0; 
+	left: 0;
+	margin: 0; 
+	padding: 0;
+	position: absolute;
+	height: 100%; 
+	width: 100%; 
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;
+	bottom: 0; 
+	z-index: 1;
+	background-color: inherit;
+}
+
+.center-list {
+	display: table;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+}
+
+li {
+	padding: 10px 20px;
+	float: left;
+}
+
+li a {
+	font-family: Verdana, Geneva, sans-serif;
+	display: inline;
+	color: #aaaaaa; 
+	text-align: center;
+	padding: 14px 16px; 
+	text-decoration: none; 
+}
+
+li a:hover {
+	color: #848484;
+}
+
+.page {
+	top: 0;
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+.bg-black {
+	color: white;
+	background-color: black;
+}
+
+.bg-white {
+	background-color: white;
+	color: black;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 48pt;
+	margin: 0;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 32pt; 
+	margin: 0;
+}
+
+h3 {
+	font-size: 18pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.clr-bl {
+	color: #1757aa;
+}
+
+p.intro {
+	font-weight: 200;
+	padding: 10%;
+	padding-top: 20%;
+	font-size: 48pt;
+	margin: 0;
+	color: white; 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#strong-intro {
+	opacity: 0;
+	position: relative;
+	animation-name: fade-up; 
+	animation-duration: 1s; 
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+#name {
+	opacity: 0;
+	position: relative;
+	animation-name: fade-right;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+a#construction {
+	border-top: 1px solid;
+	padding-top: 10px;
+	padding-left: 5px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+	letter-spacing: 8px;
+}
+
+#construction {
+	opacity: 0;
+	animation-name: fade; 
+	position: relative;
+	animation-delay: 2s;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+
+.header-message {
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.container {
+	position: absolute; 
+	width: 90%;
+	height: 80%;
+	padding: 5%; 
+	padding-top: 1%; 
+	margin: 3%;
+}
+
+#education {
+	background-color: #ffcf82;
+	border-radius: 6px;
+	padding: 1%;
+	position: absolute;
+	width: 38%;
+	height: 81%;
+	margin-bottom: 3%;
+}
+
+#skills {
+	background-color: #82b1ff;
+	border-radius: 6px;
+	padding: 1%;
+	margin-left: 45%; 
+	height: 50%;
+}
+
+#more {
+	background-color: #d2a3ff;
+	border-radius: 6px; 
+	padding: 1%; 
+	margin-left: 45%; 
+	margin-top: 0.5%;
+	height: 37%;
+}

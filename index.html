@@ -1,45 +1,52 @@
 <!DOCTYPE HTML>
 <html>
-
-<head>
-    <title>Anmol Jadvani</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/smoothscroll.js"></script>
-
-<body>
-    <div class="navbar" ng-controller="ResponseController">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-    </div>
-
-    <div class="container">
-        <section id="home">
-            <h2>Home</h2>
-            <div class="textcontainer">
-                Hi! Welcome to my website! Unfortunately this is still under construction, but feel free to view
-                what I have so far! <br> <br>
-                Contact: (732) 881-1459 <br>
-                Email: jadvani.anmol@gmail.com
-            </div>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <div class="textcontainer">
-                My name is Anmol Jadvani and I am currently a Freshman at the University of Maryland-College Park, where
-                I am on a track to get a B.S. in Computer Science.
-            </div>
-        </section>
-
-        <section id="resume">
-            <h2>Resume</h2>
-            <div class="container">
-                <object type="application/pdf" data="Resume/resume.pdf"><object>
-            </div>
-        </section>
-        </div>
-    </body>
-
+	<head>
+		<title>Anmol Jadvani</title>
+		<link rel="stylesheet" href="assets/css/styles.css">
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<body scroll="no" style="overflow:hidden">
+		<div class="navbar">
+			<div class="center-list">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Projects</a></li>
+			</ul>
+			</div>
+		</div>
+		<div id="disabled" class="page bg-black">
+			<div class="header-message" style="opacity:1">
+			<p class="intro">
+				<strong id="strong-intro">Hi, I'm </strong> <br>
+				<a id="name">Anmol Jadvani </a> <br>
+				<a id="construction">WEBSITE UNDER CONSTRUCTION</a> 
+			</p>
+			</div>
+		</div>
+		<div id="disabled" class="page bg-white">
+			<div class="container">
+			<h1>About.</h1>
+				<div id="education">
+				<h2>Education</h2>
+					<div class="container">
+						<h3 class="clr-bl">University of Maryland-College Park</h3>
+						<p>B.S. Computer Science & Mathematics</p>
+					</div>
+				</div>
+				<div id="skills">
+				<h2>Skills</h2>
+				</div>
+				<div id="more">
+				<h2>More</h2>
+				</div>
+			</div>
+		</div>
+		<div id="disabled" class="page bg-black">
+			<div class="container">
+			<h1>Projects.</h1>
+			</div>
+		</div>
+	</body>
 </html>
