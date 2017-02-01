@@ -110,6 +110,12 @@ h3 {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+h5 {
+    font-family: "helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: black;
+    margin: 10px; 
+}
+
 .clr-bl {
 	color: #1757aa;
 }
@@ -128,7 +134,7 @@ p.intro {
 	opacity: 0;
 	position: relative;
 	animation-name: fade-up; 
-	animation-duration: 1s; 
+	animation-duration: 1.5s; 
 	animation-delay: 0.5s;
 	animation-fill-mode: forwards;
 }
@@ -136,9 +142,9 @@ p.intro {
 #name {
 	opacity: 0;
 	position: relative;
-	animation-name: fade-right;
+	animation-name: fade;
 	animation-delay: 1s;
-	animation-duration: 1s;
+	animation-duration: 2s;
 	animation-fill-mode: forwards;
 }
 
@@ -174,29 +180,22 @@ a#construction {
 	margin: 3%;
 }
 
-#education {
-	background-color: #ffcf82;
-	border-radius: 6px;
-	padding: 1%;
-	position: absolute;
-	width: 38%;
-	height: 81%;
-	margin-bottom: 3%;
+.togglable {
+    margin: 10px; 
+      
 }
 
-#skills {
-	background-color: #82b1ff;
-	border-radius: 6px;
-	padding: 1%;
-	margin-left: 45%; 
-	height: 50%;
+.toggle {
+    margin: 10px;
+    border: solid #aaaaaa;  
+    background-color: #aaaaaa;
 }
 
-#more {
-	background-color: #d2a3ff;
-	border-radius: 6px; 
-	padding: 1%; 
-	margin-left: 45%; 
-	margin-top: 0.5%;
-	height: 37%;
+.toggle:hover {
+    box-shadow: -5px 5px 5px #888888;
+}
+
+.divider {
+    margin-bottom: 3%;
+    border: solid 1px; 
 }
