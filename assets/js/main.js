@@ -7,18 +7,10 @@ $(document).ready(function(){
 	});	
 });
 
-function toggle(id) {
-    var elements = ["education", "skills", "links", "contact"]; 
-    var a = document.getElementById(id); 
-    if (a.style.display == 'none') {
-        var i; 
-        for (i = 0; i < elements.length; i++) {
-            if (elements[i] != id) {
-                document.getElementById(elements[i]).style.display = 'none';
-            }
-        }
-        a.style.display = 'block'; 
-    } else {
-        a.style.display = 'none'; 
-    }
-}
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        var curr = document.getElementById( $(this).attr('id').slice(7));
+        $('.togglable').not($(curr)).slideUp(); 
+        $(curr).slideToggle();        
+    });
+});
