@@ -1,16 +1,9 @@
 $(document).ready(function(){
-	$('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $( $(this).attr('href') ).offset().top
-	    }, 1000);
-	    return false;
-	});	
-});
-
-$(document).ready(function(){
-    $('.toggle').click(function(){
-        var curr = document.getElementById( $(this).attr('id').slice(7));
-        $('.togglable').not($(curr)).slideUp(); 
-        $(curr).slideToggle();        
+	$(".wrapper").hover(function() {
+        $(this).css("border-color", "gray");
+        $(this).find(".my-link").css("color", "gray");
+    }, function() {
+        $(this).css("border-color", "white");
+        $(this).find(".my-link").css("color", "white");
     });
 });

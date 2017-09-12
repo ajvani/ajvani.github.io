@@ -1,249 +1,100 @@
-@keyframes fade-up {
-	from {
-		opacity: 0; 
-		top: 100px; 
-	}
-	to {
-		opacity: 1; 
-		top: 0px; 
-	}
-} 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 @keyframes fade {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes expand {
+    from {
+        left: 0;
+        width: 1%;
+    }
+    to {
+        width: 50%;
+        left: 128px;
+    }
+}
+
+body, html {
+	height: 100%;
+    overflow: hidden;
 }
 
 body {
-	top: 0; 
-	left: 0;
-	margin: 0; 
-	padding: 0;
-	position: absolute;
-	height: 100%; 
-	width: 100%;
-}
-
-.navbar {
-	width: 100%;
-	position: fixed;
-	bottom: 0; 
-	z-index: 1;
-	background-color: inherit;
-}
-
-.center-list {
-	display: table;
-	margin: 0 auto;
-}
-
-ul {
-    margin-top: 5px; 
-    margin-bottom: 5px; 
-}
-
-ul#navlist {
-	list-style: none;
-	margin: 0;
-	overflow: hidden;
-}
-
-ul#contact-list {
-    padding: 20px; 
-    list-style-type: none; 
-}
-
-ul#contact-list li {
-    margin: 20px;
-}
-
-.hor {
-	padding: 10px 20px;
-	float: left;
-}
-
-a {
-    text-decoration: none;
-}
-
-li a {
-	font-family: Verdana, Geneva, sans-serif;
-	display: inline;
-	color: #aaaaaa; 
-	text-align: center;
-	padding: 14px 16px; 
-}
-
-li a:hover {
-	color: #848484;
-}
-
-.page {
-	top: 0;
-	left: 0; 
-	width: 100%; 
-	height: 100%;
-}
-
-.bg-black {
-	color: white;
-	background-color: black;
-}
-
-.bg-white {
-	background-color: white;
-	color: black;
-}
-
-h1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 48pt;
-	margin: 0;
-}
-
-h2 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 32pt; 
-	margin: 0;
-}
-
-h3 {
-	font-size: 18pt;
-	font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 5px;  
-}
-
-h4, p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0; 
-}
-
-h5 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
-    color: white; 
-    margin: 10px; 
-}
-
-.clr-bl {
-	color: #1757aa;
-}
-
-p.intro {
-	font-weight: 200;
-	padding: 10%;
-	padding-top: 20%;
-	font-size: 48pt;
-	margin: 0;
-	color: white; 
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#strong-intro {
-	opacity: 0;
-	position: relative;
-	animation-name: fade-up; 
-	animation-duration: 1.5s; 
-	animation-delay: 0.5s;
-	animation-fill-mode: forwards;
-}
-
-#name {
-	opacity: 0;
-	position: relative;
-	animation-name: fade;
-	animation-delay: 1s;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-}
-
-a#construction {
-	border-top: 1px solid;
-	padding-top: 10px;
-	padding-left: 5px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12pt;
-	letter-spacing: 8px;
-}
-
-#construction {
-	opacity: 0;
-	animation-name: fade; 
-	position: relative;
-	animation-delay: 2s;
-	animation-duration: 4s;
-	animation-fill-mode: forwards;
-}
-
-.inner-list {
-    list-style-type: none; 
-    column-count: 4;
-    margin: 5px; 
-}
-
-.header-message {
-	margin-left: auto; 
-	margin-right: auto;
-}
-
-.right-column {
-    margin-left: 50%; 
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    animation: fade 3s forwards ease;
 }
 
 .container {
-	position: absolute; 
-	width: 90%;
-	height: 80%;
-	padding: 5%;
-    padding-right: 0;  
-	padding-top: 1%; 
-	margin: 3%;
+	display: flex;  
+    width: 100%;
+	justify-content: center; 
+    align-items: center;
+}
+
+.my-container {
+    margin: 3%;
+    margin-left: 0; 
     margin-right: 0;
-    margin-bottom: 0; 
 }
 
-.img-link {
-    width: 100px; 
-    height: 100px;
-    margin: 25px; 
-    padding: 0px;
-    border: solid 2px #000000;  
-    border-radius: 50%; 
-    transition-duration: 0.75s;   
+.wrapper {
+    margin: 4%;
+    padding: 2%;
+    border: solid 2px white; 
+    border-radius: 50%;
+    transition: 0.5s ease;
 }
 
-.img-link:hover {
-    background-color: #666666; 
+.wrapper-rise {
+    margin-top: -200px; 
 }
 
-.project {
-
+.my-link {
+    color: white; 
+    transition: 0.5s ease; 
 }
 
-.togglable {
-    margin: 10px; 
-    height: 200px;  
-    background-color: #eaf2ff;
+#me {
+    height: 15%; 
+    width: 15%;
+    border-radius: 50%;
+    margin: 0 auto; 
 }
 
-.toggle {
-    margin: 10px;
-    border: none;
-    padding: 5px; 
-    background-color: #182563;
-    transition-duration: 0.5s;
+#title span {
+    font-weight: bold;
 }
 
-.toggle:hover {
-    box-shadow: -5px 5px 5px #595959;
-    background-color: #000c49;
+#title {
+	color: white; 
+	font-size: 36pt; 
+	font-family: 'Raleway'; 
+	margin-top: 5%;
+    text-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    transition: text-shadow 0.3s ease;
 }
 
-.divider {
-    margin-bottom: 3%;
-    border: solid 1px; 
+#title:hover {
+    text-shadow: 0px 25px 25px rgba(0, 0, 0, 0.3);
+}
+
+#underline {
+    border: solid 2px;
+    border-color: white;  
+    height: 0;
+    margin: 10px auto;    
+    animation: expand 1.5s forwards;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+#underline:hover {
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.3);
 }
