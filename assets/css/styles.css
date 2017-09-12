@@ -64,8 +64,14 @@ body {
 #me {
     height: 15%; 
     width: 15%;
-    border-radius: 50%;
+    border-radius: 5%;
     margin: 0 auto; 
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease;
+}
+
+#me:hover {
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 #title span {
@@ -86,7 +92,7 @@ body {
 }
 
 #underline {
-    border: solid 2px;
+    border: solid 3px;
     border-color: white;  
     height: 0;
     margin: 10px auto;    
