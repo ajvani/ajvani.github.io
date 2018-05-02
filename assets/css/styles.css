@@ -26,8 +26,10 @@ body, html {
 }
 
 body {
-    background-color: #FEE140;
-    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    background: #1CD8D2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     animation: fade 3s forwards ease;
 }
 
@@ -45,22 +47,28 @@ body {
 }
 
 .wrapper {
+    display: flex;
     margin: 1%;
     margin-top: 0;
+    height: 50px;
+    width: 50px;
     padding: 0.5%;
     border: solid 2px white; 
     border-radius: 50%;
     transition: 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .my-link {
     color: white; 
+    text-decoration: none;
     transition: 0.5s ease; 
 }
 
 #me {
-    height: 15%; 
-    width: 15%;
+    width: 25%;
     border-radius: 5%;
     margin: 0 auto; 
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
