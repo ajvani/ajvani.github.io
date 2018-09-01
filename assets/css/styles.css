@@ -90,6 +90,7 @@ body {
 	margin-top: 5%;
     text-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
     transition: text-shadow 0.3s ease;
+    cursor: default;
 }
 
 #title:hover {
